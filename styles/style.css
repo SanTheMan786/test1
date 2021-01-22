@@ -1,0 +1,51 @@
+/* p = Selector; color = property; red = property value; from color to ; = Declaration*/
+/*The whole structure is called a ruleset(rule)*/
+/* p {
+    color: red;
+    width: 500px;
+    border: 1px solid black; 
+} */
+/* can use multiple elements and apply single ruelset to all of them
+p, li, h1 {
+    color: violet;
+}    
+*/    
+
+/* Below code affect the whole html document */
+html {
+    font-size: 15px; /* px = pixels : the base font size is now 15 pixels high */
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(126, 19, 19);
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;/* gap in <h1> element is default because allow readability for unstyled page; to eliminate the gap set margin: 0; */ 
+    padding: 20px 0;/* set heading's top and bottom padding to 20px */
+    color: blue;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0); /* first pixel, second pixel, third pixel value set horizontal offset, vertical offset, blur radius repectively fourth value sets base color of the shadow */
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;/* first value affects element's top and bottom side && second value affects left and right side ; auto divides the available horizontal space evenly between left and right */
+    background-color: yellowgreen;
+    padding: 0 20px 20px 20px;/* values : top right bottom left */
+    border: 5px solid rgb(14, 7, 63);
+}
+
+/* centering the image
+margin: 0 auto trick won't work here only work for block element like <body>(it takes up space on the page)
+images are inline element
+to apply margins to image we give image block-level behavior using display: block;*/
+img {
+    display: block;
+    margin: 0 auto;
+} 
